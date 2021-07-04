@@ -1,0 +1,19 @@
+0 [main] INFO org.deployd.agent.TestAgent - ***** initializing agent *****
+1625260777522	geckodriver	INFO	Listening on 127.0.0.1:19929
+1625260777979	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/3z/f3l4v7p91cbfn75xbzcpn41m0000gn/T/rust_mozprofileCkKhS7"
+*** You are running in headless mode.
+1625260779120	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/3z/f3l4v7p91cbfn75xbzcpn41m0000gn/T/rust_mozprofileCkKhS7/search.json.mozlz4", (void 0)))
+1625260781651	Marionette	INFO	Listening on port 53400
+1625260781926	Marionette	WARN	TLS certificate errors will be ignored for this session
+Jul 02, 2021 4:19:41 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+8413 [main] INFO org.deployd.agent.TestNgAdvice - -----> before execution: public void org.deployd.test.FirstSeleniumTest.buildingTestMethod()
+10238 [main] INFO org.deployd.agent.TestNgAdvice - <----- after execution: public void org.deployd.test.FirstSeleniumTest.buildingTestMethod()
+1625260783961	Marionette	INFO	Stopped listening on port 53400
+
+===============================================
+Default Suite
+Total tests run: 1, Passes: 1, Failures: 0, Skips: 0
+===============================================
+

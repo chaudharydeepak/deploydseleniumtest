@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" name="AppTestCase">
+        <classes>
+            <class name="org.deployd.test.FirstSeleniumTest">
+                <methods>
+                    <include name="buildingTestMethod"/>
+                    <include name="buildingTestMethod2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+<!--    <listeners>-->
+<!--        <listener class-name="org.deployd.test.TestNgListener"></listener>-->
+<!--    </listeners>-->
+</suite>
