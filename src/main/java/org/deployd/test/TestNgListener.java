@@ -8,6 +8,8 @@ public class TestNgListener implements ITestListener {
     @Override
     public void onTestStart(ITestResult result) {
         System.out.println("New Test Started" + result.getName());
+        AgentUtil.proxyStart();
+        AgentUtil.proxy.addHeader("CUSTOM","CUVAL");
     }
 
     @Override
@@ -38,5 +40,6 @@ public class TestNgListener implements ITestListener {
     @Override
     public void onFinish(ITestContext context) {
         System.out.println("This is onFinish method" + context.getPassedTests());
+        AgentUtil.proxyStop();
     }
 }

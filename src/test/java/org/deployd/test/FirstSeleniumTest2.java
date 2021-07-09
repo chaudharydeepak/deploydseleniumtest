@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
-public class FirstSeleniumTest {
+public class FirstSeleniumTest2 {
 
     private WebDriver driver;
 
@@ -18,7 +18,7 @@ public class FirstSeleniumTest {
     public void beforeTest() {
         System.setProperty("webdriver.gecko.driver", "/Users/deepakchaudhary/dc_consulting/deployd/geckodriver");
         FirefoxBinary firefoxBinary = new FirefoxBinary();
-        //firefoxBinary.addCommandLineOptions("--headless");
+        firefoxBinary.addCommandLineOptions("--headless");
         FirefoxOptions options = new FirefoxOptions();
         options.setBinary(firefoxBinary);
         options.setHeadless(true);
@@ -26,23 +26,8 @@ public class FirstSeleniumTest {
     }
 
     @Test
-    public void buildingTestMethod() {
-        //driver.get("https://admin:SGI2030@ai.lurn.tools/admin/v2/dashboarddetails");
-        driver.get("https://dpdsel.free.beeceptor.com/");
-        assertEquals(driver.getTitle(),"");
-    }
-
-    @Test
-    public void buildingTestMethod2() {
-        //driver.get("https://admin:SGI2030@ai.lurn.tools/admin/v2/dashboard");
-        driver.get("https://dpdsel2.free.beeceptor.com/");
-        assertEquals(driver.getTitle(),"");
-    }
-
-    @Test
     public void buildingTestMethod3() {
-        //driver.get("https://ai.lurn.tools/");
-        driver.get("https://dpdsel3.free.beeceptor.com/");
+        driver.get("https://dpdsel4.free.beeceptor.com/");
         assertEquals(driver.getTitle(),"");
     }
 

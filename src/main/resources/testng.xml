@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" name="AppTestCase">
+    <test verbose="2" name="AppTestCase" parallel="classes">
         <classes>
             <class name="org.deployd.test.FirstSeleniumTest">
                 <methods>
                     <include name="buildingTestMethod"/>
                     <include name="buildingTestMethod2"/>
+                    <include name="buildingTestMethod3"/>
+                </methods>
+            </class>
+            <class name="org.deployd.test.FirstSeleniumTest2">
+                <methods>
+                    <include name="buildingTestMethod3"/>
                 </methods>
             </class>
         </classes>
