@@ -22,7 +22,9 @@ public class FirstSeleniumTest {
         FirefoxOptions options = new FirefoxOptions();
         options.setBinary(firefoxBinary);
         options.setHeadless(true);
-        driver = new FirefoxDriver(options);
+
+        //driver = new FirefoxDriver(options);
+        driver = new FirefoxDriver();
     }
 
     @Test
@@ -48,7 +50,7 @@ public class FirstSeleniumTest {
 
     @AfterTest
     public void afterTest() {
-        driver.close();
-        //driver.quit();
+        //driver.close();
+        driver.quit();
     }
 }

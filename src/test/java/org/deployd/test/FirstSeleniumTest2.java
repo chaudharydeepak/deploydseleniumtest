@@ -33,7 +33,7 @@ public class FirstSeleniumTest2 {
 
     @AfterTest
     public void afterTest() {
-        driver.close();
-        //driver.quit();
+        //driver.close();
+        driver.quit();
     }
 }
