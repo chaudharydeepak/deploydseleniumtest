@@ -1,6 +1,8 @@
 package org.deployd.test;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
@@ -16,15 +18,18 @@ public class FirstSeleniumTest {
 
     @BeforeTest
     public void beforeTest() {
+        System.out.println("initializing web driver components");
         System.setProperty("webdriver.gecko.driver", "/Users/deepakchaudhary/dc_consulting/deployd/geckodriver");
-        FirefoxBinary firefoxBinary = new FirefoxBinary();
+        System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
+        ChromeOptions  chromeOptions = new ChromeOptions();
+        //FirefoxBinary firefoxBinary = new FirefoxBinary();
         //firefoxBinary.addCommandLineOptions("--headless");
-        FirefoxOptions options = new FirefoxOptions();
-        options.setBinary(firefoxBinary);
-        options.setHeadless(true);
+        //FirefoxOptions options = new FirefoxOptions();
+        //options.setBinary(firefoxBinary);
+        chromeOptions.setHeadless(true);
 
         //driver = new FirefoxDriver(options);
-        driver = new FirefoxDriver();
+        driver = new ChromeDriver(chromeOptions);
     }
 
     @Test

@@ -59,7 +59,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
                     <argLine>-Dnet.bytebuddy.experimental=true</argLine>
-                    <argLine>-javaagent:/Users/deepakchaudhary/dc_consulting/TestEnhancer/target/TestEnhancerTestNg-1.0-SNAPSHOT.jar</argLine>
+                    <argLine>-javaagent:/Users/chaudd1/.m2/repository/org/deployd/TestEnhancerTestNg/1.0-SNAPSHOT/TestEnhancerTestNg-1.0-SNAPSHOT.jar</argLine>
                     <suiteXmlFiles>
                         <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
                     </suiteXmlFiles>
